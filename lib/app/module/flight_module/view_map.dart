@@ -53,7 +53,7 @@ class _ViewMapState extends State<ViewMap> {
       patterns: [PatternItem.dash(30), PatternItem.gap(10)],
       points: MapsCurvedLines.getPointsOnCurve(
           _point1, _point2), // Invoke lib to get curved line points
-      color: Surface,
+      color: textColor,
     ));
     return Scaffold(
       appBar: const FlightAppBar(
