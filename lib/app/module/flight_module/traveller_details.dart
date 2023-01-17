@@ -70,50 +70,50 @@ class _TravellersDetailsState extends State<TravellersDetails> {
                       ),
                     ),
                   ),
-                  // Row(
-                  //   children: [
-                  //     Expanded(
-                  //       child: ListTile(
-                  //         title: Text(
-                  //           "Male",
-                  //           style: TextStyle(color: textColor),
-                  //         ),
-                  //         leading: Radio(
-                  //           value: 'Male',
-                  //           fillColor:
-                  //               MaterialStateProperty.all<Color>(textColor),
-                  //           groupValue: val,
-                  //           onChanged: (value) {
-                  //             setState(() {
-                  //               val = value.toString();
-                  //             });
-                  //           },
-                  //           activeColor: textColor,
-                  //         ),
-                  //       ),
-                  //     ),
-                  //     Expanded(
-                  //       child: ListTile(
-                  //         title: Text(
-                  //           "Female",
-                  //           style: TextStyle(color: textColor),
-                  //         ),
-                  //         leading: Radio(
-                  //           value: 'Female',
-                  //           fillColor:
-                  //               MaterialStateProperty.all<Color>(textColor),
-                  //           groupValue: val,
-                  //           onChanged: (value) {
-                  //             setState(() {
-                  //               val = value.toString();
-                  //             });
-                  //           },
-                  //           activeColor: textColor,
-                  //         ),
-                  //       ),
-                  //     )
-                  //   ],
-                  // ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: ListTile(
+                          title: Text(
+                            "Male",
+                            style: TextStyle(color: textColor),
+                          ),
+                          leading: Radio(
+                            value: 'Male',
+                            fillColor:
+                                MaterialStateProperty.all<Color>(textColor),
+                            groupValue: val,
+                            onChanged: (value) {
+                              setState(() {
+                                val = value.toString();
+                              });
+                            },
+                            activeColor: textColor,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: ListTile(
+                          title: Text(
+                            "Female",
+                            style: TextStyle(color: textColor),
+                          ),
+                          leading: Radio(
+                            value: 'Female',
+                            fillColor:
+                                MaterialStateProperty.all<Color>(textColor),
+                            groupValue: val,
+                            onChanged: (value) {
+                              setState(() {
+                                val = value.toString();
+                              });
+                            },
+                            activeColor: textColor,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
                   Space.Y(20),
                   Row(
                     children: [
