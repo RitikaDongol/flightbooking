@@ -1,8 +1,9 @@
 part of './pages.dart';
 
-abstract class Routes{
+abstract class Routes {
   static const INITIAL = '/';
   static const INTRO = '/intro';
+  static const LOGIN = '/login';
   static const DASHBOARD = '/dashboard';
   static const FLIGHTSEARCH = '/flight_search';
   static const FLIGHTDETAILS = '/flight_details';
@@ -12,4 +13,5 @@ abstract class Routes{
   static const REVIEWPAY = '/reviewpay';
   static const TRIPDETAILS = '/tripdetails';
   static const MAPVIEW = '/MAPVIEW';
+  static const REGISTER = '/register';
 }

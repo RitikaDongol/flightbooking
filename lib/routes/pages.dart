@@ -1,5 +1,7 @@
 import 'dart:collection';
 
+import 'package:albetro/app/module/flight_module/componects/login.dart';
+import 'package:albetro/app/module/flight_module/componects/register.dart';
 import 'package:albetro/app/module/flight_module/processing.dart';
 import 'package:albetro/app/module/flight_module/flight_details.dart';
 import 'package:albetro/app/module/flight_module/flight_search_screen.dart';
@@ -18,7 +20,7 @@ part './routes.dart';
 
 class AppPages {
   static final pages = [
-
+    GetPage(name: Routes.LOGIN, page: () => LoginScreen()),
     GetPage(name: Routes.DASHBOARD, page: () => DashboardScreen()),
     GetPage(name: Routes.FLIGHTSEARCH, page: () => FlightSearch()),
     GetPage(name: Routes.FLIGHTDETAILS, page: () => FlightDetails()),
@@ -28,5 +30,6 @@ class AppPages {
     GetPage(name: Routes.REVIEWPAY, page: () => ReviewPay()),
     GetPage(name: Routes.TRIPDETAILS, page: () => TripInfo()),
     GetPage(name: Routes.MAPVIEW, page: () => ViewMap()),
+    GetPage(name: Routes.REGISTER, page: () => RegisterScreen()),
   ];
 }
